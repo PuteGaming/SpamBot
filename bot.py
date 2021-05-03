@@ -9,7 +9,6 @@ import colorama
 
 client = discord.Client()
 
-defaultToken = 'ODM4Njg0ODE2MTg5OTQ3OTA1.YI-sGg.2vkmcR-bJReTOPidilztNhzqw7U'
 version = '2.1.5b'
 year = '2021'
 versionandyear = f'{version}#{year}'
@@ -29,12 +28,6 @@ print(' ')
 
 token = input("Bot's Token: ")
 bot = commands.Bot('.')
-
-if token == 'default':
-    token = defaultToken
-
-else:
-    pass
 
 print(f'Please enter the following command into your Server:')
 print('')
