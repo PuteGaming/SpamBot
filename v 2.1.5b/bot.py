@@ -8,6 +8,7 @@ import time
 import colorama
 
 client = discord.Client()
+
 version = '2.1.5b'
 year = '2021'
 versionandyear = f'{version}#{year}'
@@ -51,11 +52,6 @@ async def verify(ctx, token1):
                 message = input('Please enter your Message: ')
                 for i in range(1, times + 1):
                     await ctx.send(message)
-
-            if choice == 'create':
-                channel =  await guild.create_text_channel('cool-channel')
-                channel
-
 
             if choice == 'del':
                 for c in ctx.guild.channels:
